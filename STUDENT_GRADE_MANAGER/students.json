@@ -1,0 +1,42 @@
+{
+    "1": {
+        "name": "utk",
+        "marks": {
+            "maths": 9.0,
+            "physics": 9.0,
+            "chemistry": 9.0,
+            "english": 9.0,
+            "computer_science": 9.0
+        }
+    },
+    "2": {
+        "name": "ojes",
+        "marks": {
+            "maths": 99.0,
+            "physics": 99.0,
+            "chemistry": 99.0,
+            "english": 99.0,
+            "computer_science": 99.0
+        }
+    },
+    "36": {
+        "name": "utkarsh thakur",
+        "marks": {
+            "maths": 99.0,
+            "physics": 99.0,
+            "chemistry": 99.0,
+            "english": 99.0,
+            "computer_science": 99.0
+        }
+    },
+    "37": {
+        "name": "ojes thakur",
+        "marks": {
+            "maths": 100.0,
+            "physics": 100.0,
+            "chemistry": 100.0,
+            "english": 100.0,
+            "computer_science": 100.0
+        }
+    }
+}
