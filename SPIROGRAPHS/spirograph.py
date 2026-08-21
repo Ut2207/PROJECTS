@@ -1,5 +1,6 @@
 import turtle
 import math
+
 turtle.speed(0)
 turtle.tracer(0)
 
@@ -23,21 +24,24 @@ def restart():
     t.showturtle()
     t.penup()
     a = 0.0
-    s=1+0.002*a
-    x = s*(R - r) * math.cos(a) + l * math.cos((R - r) * a / r)
-    y = s*(R - r) * math.sin(a) - l * math.sin((R - r) * a / r)
+    s = 1 + 0.002 * a
+    x = s * (R - r) * math.cos(a) + l * math.cos((R - r) * a / r)
+    y = s * (R - r) * math.sin(a) - l * math.sin((R - r) * a / r)
     t.setpos(xc + x, yc + y)
     t.pendown()
 
 
 def draw():
     """Draw the spirograph using the parametric equations."""
-    for i in range(0, 1786* nRot + 1, step):
+    for i in range(0, 3452 * nRot, step):
         a = math.radians(i)
-        s=1+0.002*a
-        x = s*(R - r) * math.cos(a) + l * math.cos((R - r) * a / r)
-        y = s*(R - r) * math.sin(a) - l * math.sin((R - r) * a / r)
+        s = 1 + 0.002 * a
+        x = s * (R - r) * math.cos(a) + l * math.cos((R - r) * a / r)
+        y = s * (R - r) * math.sin(a) - l * math.sin((R - r) * a / r)
         t.setpos(xc + x, yc + y)
+
+        if i % 50 == 0:
+            turtle.update()
     t.hideturtle()
 
 

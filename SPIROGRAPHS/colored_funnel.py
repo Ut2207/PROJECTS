@@ -5,6 +5,7 @@ turtle.tracer(0)
 turtle.speed(0)
 turtle.bgcolor("black")
 
+
 def drawcircle(x, y, r, c):
     turtle.pencolor(c)
     turtle.up()
@@ -13,8 +14,8 @@ def drawcircle(x, y, r, c):
 
     for i in range(360):
         a = math.radians(i)
-        turtle.setpos(x + r * math.cos(a),
-                      y + r * math.sin(a))
+        turtle.setpos(x + r * math.cos(a), y + r * math.sin(a))
+
 
 x = -300
 y = -300
@@ -24,11 +25,9 @@ colors = ["red", "orange", "yellow", "green", "cyan", "blue", "magenta"]
 
 for i in range(300):
     drawcircle(x, y, r, colors[i % len(colors)])
-    r =100
-    x += 2
-    y += 2
+    r = 200
+    x += 20
+    y += 20
 
 turtle.update()
 turtle.done()
-
-
