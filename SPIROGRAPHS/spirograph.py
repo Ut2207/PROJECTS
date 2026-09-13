@@ -40,7 +40,7 @@ def draw():
         y = s * (R - r) * math.sin(a) - l * math.sin((R - r) * a / r)
         t.setpos(xc + x, yc + y)
 
-        if i % 50 == 0:
+        if i % 300 == 0:
             turtle.update()
     t.hideturtle()
 
