@@ -1,3 +1,5 @@
+# TODO:sub 5 step distance not working
+
 import datetime
 from re import A
 import turtle
