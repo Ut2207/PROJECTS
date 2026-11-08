@@ -104,10 +104,11 @@ def currency_conversion():
     a = input("ENTER THE 3 LETTER FOR THE COUNTRY YOU WANT TO CONVER INTO : ")
     b = float(input("ENTER THE AMOUNT OF MONEY IN Rs YOU HAVE : "))
     print("THE CONVERSION IS : ", b * inr_conversion_dict[a])
+    # TODO:setup better input valadation for in case if the country code dosent exist
 
 
 def interface():
-    print("==ENTER YOUR CHOICE FROM THE FOLLOWING AVVORDING TO YOUR NEEDS==")
+    print("==ENTER YOUR CHOICE FROM THE FOLLOWING ACCORDING TO YOUR NEEDS==")
     print("1.CALCULATE FD")
     print("2.REMAINING AMOUNT TO BE PAID")
     print("3.LOAN AUTHORIZATION")
@@ -157,3 +158,5 @@ try:
         interface()
 except:
     print("LOGGING OFF")
+
+# TODO: MAKE IT SO THAT THE MAIN MENU THATS GIVES THE USERS CHOICE ONLY APPEARS ONCE.

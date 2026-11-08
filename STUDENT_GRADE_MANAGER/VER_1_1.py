@@ -118,6 +118,12 @@ def class_average():
     return summation / count
 
 
+def stat(roll):
+    if roll in students:
+        print("MATHS : ", students[roll][maths])
+        print("PHYSICS : ")
+
+
 def interface():
     load_data()
     print("==== WELCONE TO THE STUDENT GRADE MANAGER ====")
